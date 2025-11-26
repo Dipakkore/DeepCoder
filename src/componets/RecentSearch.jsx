@@ -101,7 +101,7 @@ function RecentSearch({
           </button>
 
           <div className={`${collapsed && !hovered ? "opacity-0" : "opacity-100"} transition-opacity`}>
-            <h1 className="text-xl font-bold text-amber-500">DeepCoder 👋</h1>
+            <h1 className="text-xl font-bold text-amber-500">DeepCoder </h1>
           </div>
 
           <div className={`${collapsed && !hovered ? "opacity-0" : "opacity-100"} transition-opacity`}>

@@ -91,7 +91,7 @@ function App() {
         {/* Header */}
         <div className="flex justify-between items-center p-4 border-b border-zinc-700 sticky top-0 bg-opacity-80 backdrop-blur-md z-10">
           <h1 className="text-2xl sm:text-3xl font-extrabold tracking-wide text-amber-500">
-            DeepCoder AI 💬
+            DeepCoder AI 
           </h1>
           <button
             onClick={() => setIsDark(!isDark)}
@@ -121,7 +121,7 @@ function App() {
         </div>
 
         {/* Input box */}
-        <div className="w-[95%] sm:w-3/4 md:w-2/3 mx-auto mb-4 flex items-center gap-2 border border-zinc-700 rounded-full px-3 py-2 bg-zinc-800 focus-within:ring-2 focus-within:ring-amber-500 transition-all shadow-lg">
+        <div className="w-[95%] sm:w-3/4 md:w-2/3 mx-auto mb-11 flex items-center gap-4 border border-zinc-700 rounded-full px-3 py-2 bg-zinc-800 focus-within:ring-2 focus-within:ring-amber-500 transition-all shadow-lg">
           <input
             type="text"
             value={question}
