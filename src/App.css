@@ -1,32 +1,38 @@
-/* hide scrollbar for webkit browsers (Chrome, Safari, Edge) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar for webkit browsers */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
 
-/* hide scrollbar for Firefox */
+/* Hide scrollbar for Firefox */
 .scrollbar-hide {
   scrollbar-width: none;
-  -ms-overflow-style: none; /* legacy IE */
+  -ms-overflow-style: none;
 }
-
 
 html, body {
   scroll-behavior: smooth;
 }
 
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: rgba(255, 191, 0, 0.4);
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 191, 0, 0.6);
 }
 
-/* Chat bubble fade-in */
+/* Chat bubble fade-in animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -42,7 +48,7 @@ html, body {
   animation: fadeInUp 0.4s ease-in-out;
 }
 
-
+/* Duplicate (kept only once – no issue if exists) */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
